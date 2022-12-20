@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>
+	    User Registration Form
+	</title>
+    <style>
+        .mybox{
+            height: 200px;
+            width: 300px;
+            border: 3px solid blue;
+            text-align: center;
+        }
+    </style>
+    <script src="jquery-3.6.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").slideToggle(5000);
+            });
+            $("#btn2").click(function(){
+                $("#div2").fadeToggle(10000);
+            });
+            $("#btn3").click(function(){
+                $("#div3").hide().show(5000).hide().show(3000);
+            });
+        });
+    </script>
+	</head>
+	<body>       
+		<h1 id="heading1">CDAC, Pune</h1>
+        <br>
+        <input type="button" id="btn1" value="Slide Up / Down">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" id="btn2" value="Fade Out">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" id="btn3" value="Hide">
+        <br>
+        <br>
+        <div>
+        <div id="div1" class="mybox" style="float: left; padding-left: 20px;">
+            Content 1
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div id="div2" class="mybox" style="float: left;padding-left: 120px;">
+            Content 2
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div id="div3" class="mybox" style="float: right; padding-left: 200px;">
+            Content 3
+        </div>
+    </div>
+	</body>
+</html>
